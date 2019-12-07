@@ -24,7 +24,7 @@ div.form-group label:not(.text-danger){
   font-weight: 700;
 }
 
-div.form-group.required>label:first-child:after{
+div.form-group.required>label:first -child:after{
   content:'*';
   color: #232F3D;
   padding-left: 5px;

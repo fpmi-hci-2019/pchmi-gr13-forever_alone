@@ -10210,11 +10210,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Must have\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Must have\\another\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj",
       "projectName": "DigitalAge",
-      "projectPath": "C:\\Users\\User\\Desktop\\Must have\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Must have\\another\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Must have\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Must have\\another\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
