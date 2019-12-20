@@ -50,9 +50,10 @@ namespace DigitalAge
                         ClockSkew = TimeSpan.Zero // remove delay of token when expire
                     };
                 });
+
             services.AddCors(options =>
             {
-                options.AddPolicy("Access-Control-Allow-Origin",
+                options.AddPolicy("AllowMyOrigin",
                     builder =>
                     {
                         builder
@@ -90,7 +91,7 @@ namespace DigitalAge
             app.UseRouting();
             app.UseStaticFiles();
 
-
+            app.UseMvc();
             app.UseAuthorization();
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
@@ -107,6 +108,8 @@ namespace DigitalAge
             {
                 endpoints.MapControllers();
             });
+            app.UseCors("AllowMyOrigin");
+
         }
     }
 }
