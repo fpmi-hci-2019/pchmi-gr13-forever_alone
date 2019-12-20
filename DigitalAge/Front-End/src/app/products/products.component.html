@@ -1,0 +1,28 @@
+<div class="container">
+  <table class="table table-nonfluid">
+    <tbody>
+      <tr *ngFor="let prod of products">
+        <td>
+          <div style="float: left;width: 30%">
+            <img style="height: 200px;" [src]="prod.image" />
+          </div>
+          <div
+            style="float: left;width: 70%;
+          margin-top: 20px;"
+          >
+            <h3>{{ prod.name }}</h3>
+            <h6>{{ prod.description }}</h6>
+            <h5>Цена: {{ prod.price }} руб.</h5>
+            <div class="btn-toolbar" role="toolbar" aria-label="Action buttons">
+              <div class="btn-group mr-2" role="group" aria-label="Back group">
+                <button type="button" class="btn btn-primary">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

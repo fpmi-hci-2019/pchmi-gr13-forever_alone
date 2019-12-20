@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Must have\\another\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj": {}
+    "C:\\Users\\asus\\Documents\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Must have\\another\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj": {
+    "C:\\Users\\asus\\Documents\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Must have\\another\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Documents\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj",
         "projectName": "DigitalAge",
-        "projectPath": "C:\\Users\\User\\Desktop\\Must have\\another\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Must have\\another\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\obj\\",
+        "projectPath": "C:\\Users\\asus\\Documents\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\DigitalAge.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\Documents\\pchmi-gr13-forever_alone\\DigitalAge\\Back-End\\DigitalAge\\DigitalAge\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -18,34 +18,31 @@
   <div id="navbarNavDropdown" style="margin-left: 10%; margin-bottom: 2px;">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link categoryMargin" routerLink="/computers"
+        <a
+          class="nav-link categoryMargin"
+          routerLink="Product/Categories/Computers"
           >Компьютеры</a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link categoryMargin" routerLink="/laptops">Ноутбуки</a>
+        <a class="nav-link categoryMargin" routerLink="/categories/laptops"
+          >Ноутбуки</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link categoryMargin" routerLink="/smartphones"
+        <a class="nav-link categoryMargin" routerLink="/categories/smartphones"
           >Смартфоны</a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link categoryMargin" routerLink="/tablets">Планшеты</a>
+        <a class="nav-link categoryMargin" routerLink="/categories/tablets"
+          >Планшеты</a
+        >
       </li>
-      <li class="nav-item dropdown categoryMargin">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          id="navbarDropdownMenuLink"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
+      <li class="nav-item">
+        <a class="nav-link categoryMargin" routerLink="/categories/peripherals"
           >Периферия</a
         >
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="/headphones">Наушники</a>
-        </div>
       </li>
     </ul>
   </div>
@@ -54,12 +51,15 @@
   style="padding-top: 10px; padding-bottom: 10px; display: flex;background-color: #232f3d"
 >
   <div class="search" style="width: 60%;">
-    <form class="form-inline">
+    <form class="form-inline" (submit)="onSubmit()">
       <input
         class="form-control mr-sm-2 formMargin"
         type="search"
         placeholder="Введите название товара"
         aria-label="Search"
+        [(ngModel)]="search"
+        name="search"
+        #name="ngModel"
         style="width: 75%;"
       />
       <button class="btn" style="width: 100px;" type="submit">

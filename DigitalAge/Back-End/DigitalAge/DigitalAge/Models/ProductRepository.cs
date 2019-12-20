@@ -8,18 +8,52 @@ namespace DigitalAge.Models
     public class ProductRepository : IProductRepository
     {
         private List<Product> products = new List<Product>();
-        private int _nextId = 1;
+        private int _nextId = 4;
 
         public ProductRepository()
         {
-            Add(new Product { Name = "Tomato soup", Category = "Groceries", Price = 1.39M });
-            Add(new Product { Name = "Yo-yo", Category = "Toys", Price = 3.75M });
-            Add(new Product { Name = "Hammer", Category = "Hardware", Price = 16.99M });
+            Add(new Product
+            {
+                Id = 1,
+                Name = "Irwin Computers Coffee Lake G1-12",
+                Category = "Computers",
+                Price = 1515,
+                Description = "геймерский, CPU Intel Core i5 9400F 2900 МГц, RAM DDR4 16 ГБ, SSD 480 ГБ, NVIDIA GeForce GTX 1660 Super 6 ГБ, БП 500 Вт",
+                Image = "https://fk.by/uploads/images/cache/computers/kompyuter-bez-monitora-amd-a4_1-1100x500.jpg"
+            });
+            Add(new Product
+            {
+                Id = 2,
+                Name = "256Bit I9400164801660",
+                Category = "Computers",
+                Price = 1487,
+                Description = "домашний/геймерский, CPU Intel Core i5 9400F 2900 МГц, RAM DDR4 16 ГБ, SSD 480 ГБ, NVIDIA GeForce GTX 1660 6 ГБ, БП 500 Вт",
+                Image = "https://fk.by/uploads/images/cache/computers/kompyuter-bez-monitora-amd-a4_1-1100x500.jpg"
+            });
+            Add(new Product
+            {
+                Id = 3,
+                Name = "Irwin Computers Matisse G1-17",
+                Category = "Computers",
+                Price = 1690,
+                Description = "None",
+                Image = "https://fk.by/uploads/images/cache/computers/kompyuter-bez-monitora-amd-a4_1-1100x500.jpg"
+            });
         }
 
         public IEnumerable<Product> GetAll()
         {
             return products;
+        }
+
+        public IEnumerable<Product> GetAll(string namePart)
+        {
+            return products.Where(prod => prod.Name.Contains(namePart));
+        }
+
+        public IEnumerable<Product> GetAllFromCategory(string category)
+        {
+            return products.Where(prod => prod.Category == category);
         }
 
         public Product Get(int id)

@@ -1,27 +1,38 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
-import { UserComponent } from './user/user.component';
-import {RouterModule, Routes} from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { RegistrationComponent } from './user/registration/registration.component';
-import { LoginComponent } from './user/login/login.component';
-import {HttpClientModule} from '@angular/common/http';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import { AppComponent } from "./app.component";
+import { UserComponent } from "./user/user.component";
+import { RouterModule, Routes } from "@angular/router";
+import { HomeComponent } from "./home/home.component";
+import { ProductsComponent } from "./products/products.component";
+import { RegistrationComponent } from "./user/registration/registration.component";
+import { LoginComponent } from "./user/login/login.component";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { ProductService } from "./services/products.service";
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: "", redirectTo: "/home", pathMatch: "full" },
   {
-    path: 'user', component: UserComponent,
+    path: "user",
+    component: UserComponent,
     children: [
-      {path:   'registration', component: RegistrationComponent},
-      {path:   'login', component: LoginComponent},
+      { path: "registration", component: RegistrationComponent },
+      { path: "login", component: LoginComponent }
     ]
   },
   {
-    path: 'home', component: HomeComponent
+    path: "home",
+    component: HomeComponent
+  },
+  {
+    path: "Product/Categories/:category",
+    component: ProductsComponent
+  },
+  {
+    path: "Product/Search/:name",
+    component: ProductsComponent
   }
 ];
 
@@ -31,7 +42,8 @@ const routes: Routes = [
     UserComponent,
     HomeComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    ProductsComponent
   ],
   exports: [RouterModule],
   imports: [
@@ -41,7 +53,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     FormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
