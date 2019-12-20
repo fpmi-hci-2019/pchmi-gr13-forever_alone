@@ -1,37 +1,37 @@
-body{
-  background-color: #232F3D ;
+body {
+  background-color: white;
 }
 
-input.form-control,input.form-control:focus{
+input.form-control,
+input.form-control:focus {
   background-color: #636b7b;
-  color: #232F3D;
+  color: #232f3d;
   border: 1px solid #636b7b;
-
 }
 
-input.form-control:focus{
+input.form-control:focus {
   box-shadow: none;
 }
 
-button[type=submit].btn{
+button[type="submit"].btn {
   border-radius: 20px;
   background-color: #04c582;
   color: #fff;
 }
 
-div.form-group label:not(.text-danger){
-  color: #232F3D;
+div.form-group label:not(.text-danger) {
+  color: #232f3d;
   font-weight: 700;
 }
 
-div.form-group.required>label:first -child:after{
-  content:'*';
-  color: #232F3D;
+div.form-group.required > label:first -child:after {
+  content: "*";
+  color: #232f3d;
   padding-left: 5px;
 }
 
 #toast-container > div {
-  opacity:1;
+  opacity: 1;
 }
 
 .wrapper {
@@ -46,18 +46,18 @@ div.form-group.required>label:first -child:after{
 .wrapped-div {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  background: #C4C4C4;
+  background: #c4c4c4;
   padding: 30px;
   width: 90%;
   max-width: 450px;
   position: relative;
   padding: 0px;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* Tabs */
-.tab-header{
+.tab-header {
   text-align: center;
 }
 
@@ -70,7 +70,7 @@ div.form-group.required>label:first -child:after{
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  display:inline-block;
+  display: inline-block;
   padding: 30px 40px 10px 40px;
   cursor: pointer;
   color: #545d6a;
@@ -81,14 +81,14 @@ div.form-group.required>label:first -child:after{
   outline: none;
 }
 
-form{
+form {
   margin: 0px 16px;
 }
 
-div.form-group input.invalid{
+div.form-group input.invalid {
   border: 1px solid #dc3545;
 }
-div.form-group label:first-child{
+div.form-group label:first-child {
   text-transform: uppercase;
   font-size: 0.9rem;
 }
