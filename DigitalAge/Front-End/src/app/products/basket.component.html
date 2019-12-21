@@ -1,0 +1,20 @@
+<div class="container">
+  <table class="table table-nonfluid">
+    <tbody>
+      <tr *ngFor="let prod of basketProducts">
+        <td style="padding-left: 100px; padding-right: 100px;">
+          <div style="float: left;width: 30%">
+            <img style="height: 80px;" [src]="prod.image" />
+          </div>
+          <div
+            style="float: left;width: 70%;
+                margin-top: 20px;"
+          >
+            <span>{{ prod.name }}</span>
+            <span style="float: right;">Цена: {{ prod.price }} руб.</span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

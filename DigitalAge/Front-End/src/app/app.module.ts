@@ -11,6 +11,8 @@ import { LoginComponent } from "./user/login/login.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ProductService } from "./services/products.service";
+import { BasketComponent } from "./products/basket.component";
+import { DataService } from "./services/data.service";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -33,6 +35,10 @@ const routes: Routes = [
   {
     path: "Product/Search/:name",
     component: ProductsComponent
+  },
+  {
+    path: "User/Basket",
+    component: BasketComponent
   }
 ];
 
@@ -43,7 +49,8 @@ const routes: Routes = [
     HomeComponent,
     RegistrationComponent,
     LoginComponent,
-    ProductsComponent
+    ProductsComponent,
+    BasketComponent
   ],
   exports: [RouterModule],
   imports: [
@@ -53,7 +60,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     FormsModule
   ],
-  providers: [ProductService],
+  providers: [ProductService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

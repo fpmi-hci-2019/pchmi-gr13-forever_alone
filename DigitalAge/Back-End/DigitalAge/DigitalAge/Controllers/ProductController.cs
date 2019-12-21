@@ -26,5 +26,12 @@ namespace DigitalAge.Controllers
         {
             return repository.GetAllFromCategory(category);
         }
+
+        [Route("Product/{id}")]
+        [HttpGet]
+        public Product Get(int id)
+        {
+            return repository.Get(id);
+        }
     }
 }
