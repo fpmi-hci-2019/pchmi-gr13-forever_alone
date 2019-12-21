@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-=======
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -13,63 +8,41 @@ import { RegistrationComponent } from './user/registration/registration.componen
 import { LoginComponent } from './user/login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {NgbAlertModule, NgbModule, NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 import { CartComponent } from './cart/cart.component';
->>>>>>> Islam
-
-import { AppComponent } from "./app.component";
-import { UserComponent } from "./user/user.component";
-import { RouterModule, Routes } from "@angular/router";
-import { HomeComponent } from "./home/home.component";
-import { ProductsComponent } from "./products/products.component";
-import { RegistrationComponent } from "./user/registration/registration.component";
-import { LoginComponent } from "./user/login/login.component";
-import { HttpClientModule } from "@angular/common/http";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { ProductService } from "./services/products.service";
-import { BasketComponent } from "./products/basket.component";
-import { DataService } from "./services/data.service";
+import { AppComponent } from './app.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductService } from './services/products.service';
+import { BasketComponent } from './products/basket.component';
+import { DataService } from './services/data.service';
+import { NgbModule, NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
-  { path: "", redirectTo: "/home", pathMatch: "full" },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {
-    path: "user",
+    path: 'user',
     component: UserComponent,
     children: [
-<<<<<<< HEAD
-      { path: "registration", component: RegistrationComponent },
-      { path: "login", component: LoginComponent }
+      { path: 'registration', component: RegistrationComponent },
+      { path: 'login', component: LoginComponent }
     ]
   },
   {
-    path: "home",
+    path: 'home',
     component: HomeComponent
   },
   {
-    path: "Product/Categories/:category",
+    path: 'Product/Categories/:category',
     component: ProductsComponent
   },
   {
-    path: "Product/Search/:name",
+    path: 'Product/Search/:name',
     component: ProductsComponent
   },
   {
-    path: "User/Basket",
-    component: BasketComponent
-=======
-      {path:   'registration', component: RegistrationComponent},
-      {path:   'login', component: LoginComponent}
-    ]
+    path: 'User/Basket',
+    component: BasketComponen
   },
-  {
-    path: 'home', component: HomeComponent
-  },
-  {
-    path: 'cart', component: CartComponent
->>>>>>> Islam
-  }
-];
-
+    ];
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,12 +50,9 @@ const routes: Routes = [
     HomeComponent,
     RegistrationComponent,
     LoginComponent,
-<<<<<<< HEAD
     ProductsComponent,
-    BasketComponent
-=======
+    BasketComponent,
     CartComponent
->>>>>>> Islam
   ],
   exports: [RouterModule],
   imports: [
