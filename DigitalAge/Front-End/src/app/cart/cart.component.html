@@ -1,0 +1,9 @@
+<div class="alert-root">
+  <p class="alert"*ngFor="let prduct of productList">
+    <ngb-alert [type]="alerts[0].type" (close)="close(alerts[0])">{{ 'sdfsdf' }}</ngb-alert>
+  </p>
+  <div>
+    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+    <span><a routerLink="/home" routerLinkActive="active">Назад</a> </span>
+  </div>
+</div>

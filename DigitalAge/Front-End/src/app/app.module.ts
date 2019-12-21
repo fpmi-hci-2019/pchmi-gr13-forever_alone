@@ -9,6 +9,8 @@ import { RegistrationComponent } from './user/registration/registration.componen
 import { LoginComponent } from './user/login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {NgbAlertModule, NgbModule, NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
+import { CartComponent } from './cart/cart.component';
 
 
 const routes: Routes = [
@@ -17,11 +19,14 @@ const routes: Routes = [
     path: 'user', component: UserComponent,
     children: [
       {path:   'registration', component: RegistrationComponent},
-      {path:   'login', component: LoginComponent},
+      {path:   'login', component: LoginComponent}
     ]
   },
   {
     path: 'home', component: HomeComponent
+  },
+  {
+    path: 'cart', component: CartComponent
   }
 ];
 
@@ -31,13 +36,17 @@ const routes: Routes = [
     UserComponent,
     HomeComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    CartComponent
   ],
   exports: [RouterModule],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgbModule,
+    NgbPaginationModule,
+    NgbAlertModule,
     RouterModule.forRoot(routes),
     FormsModule
   ],
