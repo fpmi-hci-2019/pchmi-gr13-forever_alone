@@ -1,9 +1,21 @@
 <div class="alert-root">
   <p class="alert"*ngFor="let prduct of productList">
-    <ngb-alert [type]="alerts[0].type" (close)="close(alerts[0])">{{ 'sdfsdf' }}</ngb-alert>
+    <ngb-alert [type]="alerts[0].type" (close)="close(alerts[0])"><td style="padding-left: 100px; padding-right: 100px;">
+      <div style="float: left;width: 30%">
+        <img style="height: 80px;" [src]="prduct.image" />
+      </div>
+      <div
+        style="float: left;width: 70%;
+                margin-top: 20px;"
+      >
+        <span>{{ prduct.name }}</span>
+        <span style="float: right;">Цена: {{ prduct.price }} руб.</span>
+      </div>
+    </td> </ngb-alert>
   </p>
   <div>
-    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
-    <span><a routerLink="/home" routerLinkActive="active">Назад</a> </span>
+    <button type="button" class="btn btn-danger" routerLink="/home">Назад</button>
+    <button type="button" class="btn btn-primary" (click)="reset()">Вернуть</button>
+    <button type="button" class="btn btn-success" (click)="Send()">Отпрваить</button>
   </div>
 </div>

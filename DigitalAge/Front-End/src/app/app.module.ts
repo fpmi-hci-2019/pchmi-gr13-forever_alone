@@ -39,8 +39,12 @@ const routes: Routes = [
     component: ProductsComponent
   },
   {
+    path: 'cart',
+    component: CartComponent
+  },
+  {
     path: 'User/Basket',
-    component: BasketComponen
+    component: BasketComponent
   },
     ];
 @NgModule({

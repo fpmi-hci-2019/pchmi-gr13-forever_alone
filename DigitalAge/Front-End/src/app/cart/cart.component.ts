@@ -6,7 +6,7 @@ interface Alert {
 }
 
 const ALERTS: Alert[] = [{
-  type: 'success',
+  type: 'light',
   message: 'This is a light alert',
 }
 ];
@@ -24,7 +24,7 @@ export class CartComponent implements OnInit {
   ngOnInit() {
     this.alerts = ALERTS;
     console.log(this.alerts);
-    this.productList = JSON.parse(localStorage.getItem('products'));
+    this.productList = JSON.parse(localStorage.getItem('addedProducts'));
    // console.log(this.productList);
   }
   close(alert: Alert) {
@@ -32,5 +32,10 @@ export class CartComponent implements OnInit {
   }
   reset() {
     this.productList = Array.from(ALERTS);
+  }
+  Send() {
+    alert('Заказ оформлен!');
+    this.close(this.alerts[0]);
+
   }
 }
